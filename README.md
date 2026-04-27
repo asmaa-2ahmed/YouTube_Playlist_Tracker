@@ -1,4 +1,7 @@
 # 📺 YouTube Playlist Tracker
+<p align="center">
+  <img src="./assets/demo.png" width="600"/>
+</p>
 
 A clean, lightweight Streamlit app that calculates the **total duration of any YouTube playlist** and helps you track your progress through it.
 
