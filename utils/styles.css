@@ -2,6 +2,7 @@
 
 html, body { font-family: 'Syne', sans-serif; }
 .stApp { background: #0d0d0d; color: #f0ede6; }
+/* #MainMenu, footer, header { visibility: hidden; } */
 
 /* ── Typography ── */
 .hero-title {
