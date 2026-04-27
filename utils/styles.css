@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap');
+
+html, body { font-family: 'Syne', sans-serif; }
+.stApp { background: #0d0d0d; color: #f0ede6; }
+
+/* ── Typography ── */
+.hero-title {
+    font-size: 3rem; font-weight: 800;
+    letter-spacing: -0.04em; line-height: 1.05;
+    color: #f0ede6; margin-bottom: 0.15rem;
+}
+.hero-sub {
+    font-family: 'DM Mono', monospace; font-size: 0.78rem;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    color: #ff4d00; margin-bottom: 2.5rem;
+}
+.section-label {
+    font-family: 'DM Mono', monospace; font-size: 0.68rem;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: #555; margin-bottom: 0.4rem;
+}
+
+/* ── Cards ── */
+.metric-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin: 1.5rem 0; }
+.card {
+    background: #181818; border: 1px solid #2a2a2a;
+    border-radius: 12px; padding: 1.25rem 1.5rem;
+}
+.card .lbl {
+    font-family: 'DM Mono', monospace; font-size: 0.65rem;
+    letter-spacing: 0.2em; text-transform: uppercase;
+    color: #555; margin-bottom: 0.3rem;
+}
+.card .val { font-size: 1.6rem; font-weight: 700; color: #f0ede6; letter-spacing: -0.03em; }
+.card.accent .val { color: #ff4d00; }
+
+/* ── Progress ── */
+.prog-wrap { margin: 1.75rem 0 0.5rem; }
+.prog-track { background: #1e1e1e; border-radius: 999px; height: 10px; overflow: hidden; margin-bottom: 0.5rem; }
+.prog-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #ff4d00, #ff8a50); }
+.prog-meta { display: flex; justify-content: space-between; font-family: 'DM Mono', monospace; font-size: 0.72rem; color: #888; }
+.prog-pct { color: #ff4d00; font-weight: 600; }
+
+/* ── Playlist banner ── */
+.pl-banner {
+    background: #181818; border: 1px solid #2a2a2a;
+    border-left: 3px solid #ff4d00; border-radius: 0 10px 10px 0;
+    padding: 0.9rem 1.2rem; margin-bottom: 1.5rem;
+}
+.pl-banner .lbl { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; text-transform: uppercase; color: #555; }
+.pl-banner .title { font-size: 1.05rem; font-weight: 600; color: #f0ede6; margin-top: 0.15rem; }
+
+/* ── Inputs ── */
+.stTextInput input, .stNumberInput input {
+    background: #181818 !important; border: 1px solid #2a2a2a !important;
+    color: #f0ede6 !important; border-radius: 8px !important;
+    font-family: 'DM Mono', monospace !important;
+}
+.stTextInput input:focus, .stNumberInput input:focus {
+    border-color: #ff4d00 !important;
+    box-shadow: 0 0 0 2px rgba(255,77,0,0.15) !important;
+}
+label[data-testid="stWidgetLabel"] p {
+    font-family: 'DM Mono', monospace !important; font-size: 0.7rem !important;
+    letter-spacing: 0.18em !important; text-transform: uppercase !important; color: #555 !important;
+}
+.stCheckbox label p { font-family: 'DM Mono', monospace !important; font-size: 0.75rem !important; color: #aaa !important; }
+
+/* ── Button ── */
+.stButton > button {
+    background: #ff4d00 !important; color: #0d0d0d !important;
+    border: none !important; border-radius: 8px !important;
+    font-family: 'Syne', sans-serif !important; font-weight: 700 !important;
+    font-size: 0.9rem !important; width: 100%;
+}
+.stButton > button:hover { opacity: 0.85 !important; }
